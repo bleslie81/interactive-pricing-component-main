@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="bgpattern">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1900" height="449">
+      <path fill="#F1F5FE" fill-rule="evenodd" d="M0 0h1900v449H191.5C85.737 449 0 363.263 0 257.5V0z"/>
+    </svg>
+  </div>
+  <div class="container">
+    
+    <div class="text">
+      <div class="circle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="146" height="145"><g fill="none" fill-rule="evenodd" stroke="#CFD8EF"><circle cx="63" cy="82" r="62.5"/><circle cx="105" cy="41" r="40.5"/></g></svg>
+      </div>
+      <div class="textsample">
+        <h2>Simple, traffic-based pricing</h2>
+        <h5>Sign-up for our 30-day trial. No credit card required. </h5>
+      </div>
+      
+    </div>
+    <div class="sliderbox">
+      <div class="pricetext">
+        <div class="pviews">
+          <h5><span id="pviews"></span>&nbsp;Pageviews</h5>
+        </div>
+        
+        <div class="price">
+          <h5><span style="font-size: 25px; color: #000;">$<span id="pdollar"></span>.00</span> /month</h5>  
+        </div>
+        
+      </div>
+      <div class="sidebar">
+        <input type="range" class="slider" name="" id="rangebar" value="40" min="0" max="100" step="20" oninput="loadSlider()">
+        <span class="triangle-range-background-slider"></span>
+      </div>
+     
+      <div class="billing">
+        <span style="font-size: 12px;">Monthly Billing</span>
+        <div class="toggle">
+          <div class="toggle-button"></div>
+        </div>
+        <div class="billingoptions">
+          <span style="font-size: 12px;">Yearly Billing </span><div class="discount">25% discount</div>
+        </div>
+      
+      </div>
+    </div>
+    <div class="hline"></div>
+    <div class="sliderbox">
+      
+      <div class="group">
+        <div class="list">
+          <ul>
+            <li><span class="material-symbols-outlined">
+              done
+              </span>&nbsp;&nbsp;Unlimited websites</li>
+            <li><span class="material-symbols-outlined">
+              done
+              </span>&nbsp;&nbsp;100% data ownership</li>
+            <li><span class="material-symbols-outlined">
+              done
+              </span>&nbsp;&nbsp;Email reports</li>
+          </ul>
+
+        </div>
+        <div class="btn">
+          <button>Start my trial</button>
+        </div>
+        
+      </div>
+    </div>
+      
+      
+    </div>
+
+    
+  </div>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

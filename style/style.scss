@@ -1,0 +1,219 @@
+//Primary
+$FullSliderBar: hsl(174, 77%, 80%);
+$SliderBackround: rgb(16, 213, 194);
+$DiscountBackground: hsl(14, 92%, 95%);
+$DiscountText: hsl(15, 100%, 70%);
+$CTAText: hsl(226, 100%, 87%);
+//Neutral
+$PricingComponentBackground: hsl(0, 0%, 100%);
+$MainBackground: hsl(230, 100%, 99%);
+$EmptySliderBar: hsl(224, 65%, 95%);
+$ToggleBackground: hsl(223, 50%, 87%);
+$Text: hsl(225, 20%, 60%);
+$TextCTABackground: hsl(227deg 95.78% 17.7%);
+
+$fontsize: 15px;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+*,
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $MainBackground;
+    font-size: $fontsize;
+    font-family: 'Manrope', sans-serif;
+}
+.container{
+    position: absolute;
+    margin: auto;
+    width: 60%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: -webkit-center;
+    .textsample{
+        position: relative;
+        top: -110px;
+    }
+}
+.text{
+    text-align: center;
+    margin-bottom: -60px;
+    h2{
+        color: $TextCTABackground;
+        padding: 10px 0;
+    }
+    h5{
+        color: $Text;
+        font-weight: 400;
+    }
+}
+.sliderbox{
+    padding: 25px 50px;
+    background-color: $PricingComponentBackground;
+    box-shadow: 5px 5px 15px #dddddd;
+    width: 600px;
+    .pricetext{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        h5{
+            color: $Text;
+        }
+        .pviews{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+.bgpattern{
+    top: 0;
+    position: relative;
+    width: 100%;
+}
+.group{
+    justify-content: space-between;
+    display: flex;
+    .list>ul{
+        text-align: left;
+        list-style: none;
+        li{
+            padding: 2px 0px;
+            font-size: 13px;
+        }
+    }
+    .btn{
+        display: flex;
+        align-content: flex-end;
+        justify-content: center;
+        align-items: center;
+        button{
+            padding: 12px 45px;
+            border-radius: 20px;
+            border: none;
+            background-color: $TextCTABackground;
+            color: $CTAText;
+            cursor: pointer;
+        }
+        button:hover{
+            color: #ffffff;
+        }
+    }
+}
+.billing{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .toggle{
+        background-color: $SliderBackround;
+        width: 40px;
+        height: 20px;
+        border-radius: 10px;
+        margin: 0 5px 0 5px;
+        position: relative;
+        cursor: pointer;
+        .toggle-button{
+            background-color: #ffffff;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            left: 5px;
+            transition: .5s;
+        }
+    }
+    .billingoptions{
+        display: flex;
+        align-items: center;
+        margin: 30px 0;
+        .discount{
+            font-size: 11px;
+            padding: 3px 10px;
+            background-color: $DiscountBackground;
+            margin-left: 5px;
+            border-radius: 10px;
+            transition: .3s;
+        }
+    }
+}
+input[type=range]{
+    width: 100%;
+    outline: none;
+}
+.active{
+    left: 20px !important;
+    transition: .5s;
+    color: $DiscountText;
+}
+.material-symbols-outlined {
+  font-size: 15px;
+  color: rgb(8, 181, 8);
+  text-shadow: 1px 2px 4px green;
+}
+.hline{
+    width: 75%;
+    background-color: $EmptySliderBar;
+    height: 1.5px;
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    outline: none;
+    position: relative;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    background-color: $SliderBackround;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: -4px;
+    pointer-events: auto;
+}
+input[type="range"]::-moz-range-thumb{
+    -webkit-appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    background-color: $SliderBackround;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: -4px;
+    pointer-events: auto;
+}
+input[type="range"]::-ms-thumb{
+    -webkit-appearance: none;
+    height: 1.7em;
+    width: 1.7em;
+    background-color: $SliderBackround;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: -4px;
+    pointer-events: auto;
+}
+input[type="range"]:active::-webkit-slider-thumb{
+    background-color: $SliderBackround;
+    box-shadow: 2px 2px 14px $SliderBackround;
+}
+.slider{
+    width: 100%;
+    height: 5px;
+    background-color: $SliderBackround;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+}

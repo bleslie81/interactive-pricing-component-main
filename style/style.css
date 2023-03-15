@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(230, 100%, 99%);
+  font-size: 15px;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  position: absolute;
+  margin: auto;
+  width: 60%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: -webkit-center;
+}
+.container .textsample {
+  position: relative;
+  top: -110px;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: -60px;
+}
+.text h2 {
+  color: hsl(227, 95.78%, 17.7%);
+  padding: 10px 0;
+}
+.text h5 {
+  color: hsl(225, 20%, 60%);
+  font-weight: 400;
+}
+
+.sliderbox {
+  padding: 25px 50px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 5px 5px 15px #dddddd;
+  width: 600px;
+}
+.sliderbox .pricetext {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.sliderbox .pricetext h5 {
+  color: hsl(225, 20%, 60%);
+}
+.sliderbox .pricetext .pviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bgpattern {
+  top: 0;
+  position: relative;
+  width: 100%;
+}
+
+.group {
+  justify-content: space-between;
+  display: flex;
+}
+.group .list > ul {
+  text-align: left;
+  list-style: none;
+}
+.group .list > ul li {
+  padding: 2px 0px;
+  font-size: 13px;
+}
+.group .btn {
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: center;
+}
+.group .btn button {
+  padding: 12px 45px;
+  border-radius: 20px;
+  border: none;
+  background-color: hsl(227, 95.78%, 17.7%);
+  color: hsl(226, 100%, 87%);
+  cursor: pointer;
+}
+.group .btn button:hover {
+  color: #ffffff;
+}
+
+.billing {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.billing .toggle {
+  background-color: rgb(16, 213, 194);
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 0 5px 0 5px;
+  position: relative;
+  cursor: pointer;
+}
+.billing .toggle .toggle-button {
+  background-color: #ffffff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  transition: 0.5s;
+}
+.billing .billingoptions {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+.billing .billingoptions .discount {
+  font-size: 11px;
+  padding: 3px 10px;
+  background-color: hsl(14, 92%, 95%);
+  margin-left: 5px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+input[type=range] {
+  width: 100%;
+  outline: none;
+}
+
+.active {
+  left: 20px !important;
+  transition: 0.5s;
+  color: hsl(15, 100%, 70%);
+}
+
+.material-symbols-outlined {
+  font-size: 15px;
+  color: rgb(8, 181, 8);
+  text-shadow: 1px 2px 4px green;
+}
+
+.hline {
+  width: 75%;
+  background-color: hsl(224, 65%, 95%);
+  height: 1.5px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: relative;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  background-color: rgb(16, 213, 194);
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: -4px;
+  pointer-events: auto;
+}
+
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  background-color: rgb(16, 213, 194);
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: -4px;
+  pointer-events: auto;
+}
+
+input[type=range]::-ms-thumb {
+  -webkit-appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  background-color: rgb(16, 213, 194);
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: -4px;
+  pointer-events: auto;
+}
+
+input[type=range]:active::-webkit-slider-thumb {
+  background-color: rgb(16, 213, 194);
+  box-shadow: 2px 2px 14px rgb(16, 213, 194);
+}
+
+.slider {
+  width: 100%;
+  height: 5px;
+  background-color: rgb(16, 213, 194);
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */
