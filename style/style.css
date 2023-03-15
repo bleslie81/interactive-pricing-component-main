@@ -152,7 +152,7 @@ input[type=range] {
 }
 
 .hline {
-  width: 75%;
+  width: 55%;
   background-color: hsl(224, 65%, 95%);
   height: 1.5px;
 }
