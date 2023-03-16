@@ -56,7 +56,8 @@ body{
     padding: 25px 50px;
     background-color: $PricingComponentBackground;
     box-shadow: 5px 5px 15px #dddddd;
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     .pricetext{
         display: flex;
         justify-content: space-between;
@@ -179,9 +180,14 @@ input[type="range"]::-webkit-slider-thumb{
     width: 1.7em;
     background-color: $SliderBackround;
     cursor: pointer;
-    border-radius: 10px;
-    margin-top: -4px;
+    border-radius: 50%;
+    margin-top: -2px;
     pointer-events: auto;
+    background-image: url('../images/icon-slider.svg');
+    background-size: 15px;
+    background-position: 60% 55%;
+    background-repeat: no-repeat;
+    background-clip: border-box;
 }
 input[type="range"]::-moz-range-thumb{
     -webkit-appearance: none;
